@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { asset } from '../utils/asset';
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         {/* HERO SECTION */}
         <section style={styles.hero}>
           <Image
-            src="./profile.jpg"
+            src={asset('/profile.jpg')}
             alt="Rakesh Kumar"
             width={140}
             height={140}
