@@ -12,7 +12,15 @@ export default function Home() {
       <main style={styles.main}>
         {/* HERO SECTION */}
         <section style={styles.hero}>
-          <img src="/profile.jpg" alt="Rakesh Kumar" style={styles.avatar} />
+          <Image
+            src="/profile.jpg"
+            alt="Rakesh Kumar"
+            width={140}
+            height={140}
+            unoptimized
+            priority
+            style={styles.avatar}
+          />
           <h1 style={styles.name}>Rakesh Kumar</h1>
           <h2 style={styles.role}>Senior Full Stack Developer</h2>
           <p style={styles.summary}>
