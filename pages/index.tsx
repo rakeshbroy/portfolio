@@ -33,7 +33,7 @@ export default function Home() {
         <section style={styles.section}>
           <h2 style={styles.sectionTitle}>Skills</h2>
           <ul style={styles.list}>
-            <li>Angular, React, Next.js, HTML, CSS, JavaScript 123</li>
+            <li>Angular, React, Next.js, HTML, CSS, JavaScript</li>
             <li>Node.js, PHP, Laravel, GraphQL</li>
             <li>MySQL, MongoDB, Oracle</li>
             <li>Docker, Kubernetes, AWS, CI/CD</li>
