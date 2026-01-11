@@ -13,7 +13,7 @@ export default function Home() {
         {/* HERO SECTION */}
         <section style={styles.hero}>
           <Image
-            src="/profile.jpg"
+            src="./profile.jpg"
             alt="Rakesh Kumar"
             width={140}
             height={140}
