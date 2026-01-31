@@ -7,11 +7,6 @@
     "build": "next build && rm -rf docs && cp -r out docs",
     "lint": "eslint"
   },
-  "dependencies": {
-    "next": "16.1.1",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
-  },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^19",
@@ -19,5 +14,10 @@
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
     "typescript": "^5"
+  },
+  "dependencies": {
+    "next": "^14.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
