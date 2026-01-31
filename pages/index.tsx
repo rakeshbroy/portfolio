@@ -1,6 +1,10 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 
+const basePath =
+  process.env.NODE_ENV === "production" ? "/portfolio" : "";
+
+
 export default function Home() {
   return (
     <>
@@ -54,7 +58,7 @@ export default function Home() {
 
         <div className={styles.right}>
           <div className={styles.avatarGlow}>
-            <img src="/profile.jpg" alt="Rakesh Kumar" />
+            <img src={`${basePath}/profile.jpg`}alt="Rakesh Kumar" />
           </div>
         </div>
       </main>
@@ -313,7 +317,7 @@ export default function Home() {
         <div className={styles.contactActions}>
           {/* Resume Download */}
           <a
-            href="/Rakesh_Kumar_Resume.pdf"
+            href={`${basePath}/Rakesh_Kumar_Resume.pdf`}
             download
             className={styles.resumeButton}
           >
