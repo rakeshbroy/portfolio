@@ -1,12 +1,11 @@
-const isProd = process.env.NODE_ENV === 'production';
-
-const repoName = 'portfolio'; // 👈 your GitHub repo name
+/** @type {import('next').NextConfig} */
+const repoName = 'portfolio';
 
 const nextConfig = {
   output: 'export',
 
-  basePath: isProd ? `/${repoName}` : '',
-  assetPrefix: isProd ? `/${repoName}/` : '',
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
 
   images: {
     unoptimized: true,
